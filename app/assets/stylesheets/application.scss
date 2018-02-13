@@ -1,0 +1,235 @@
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import  "toastr";
+
+ body {
+   /* Location of the image */
+   background-image: url(nakamaninaru.001.png);
+
+   /* Image is centered vertically and horizontally at all times */
+   background-position: center center;
+
+   /* Image doesn't repeat */
+   background-repeat: no-repeat;
+
+   /* Makes the image fixed in the viewport so that it doesn't move when
+      the content height is greater than the image height */
+   background-attachment: fixed;
+
+   /* This is what makes the background image rescale based on its container's size */
+   background-size: cover;
+
+   /* Pick a solid background color that will be displayed while the background image is loading */
+   background-color:#464646;
+
+   /* SHORTHAND CSS NOTATION
+    * background: url(background-photo.jpg) center center cover no-repeat fixed;
+    */
+ }
+
+ /* For mobile devices */
+ @media only screen and (max-width: 767px) {
+   body {
+     /* The file size of this background image is 93% smaller
+      * to improve page load speed on mobile internet connections */
+     background-image: url(nakamaninaru.001.png);
+   }
+ 	}
+
+
+.jumbotron {
+    padding-top: 0px;
+  font-family: "MisakiGothic", sans-serif;
+  font-size: 30px;
+
+}
+.jumbotron1 {
+   padding-top: 0px;
+   // 背景画像を暗くする
+   background:url(model.001.jpeg);
+ background-size: cover;
+  margin: 0px 0px 10px 0px;
+  height: 1500px;
+  font-family: "MisakiGothic", sans-serif;
+  font-size: 30px;
+}
+
+.jumbotron2 {
+   padding-top: 0px;
+   // 背景画像を暗くする
+   background:url(profile.001.png);
+ background-size: cover;
+  margin: 0px 0px 0px 0px;
+  height: 1200px;
+  font-family: "MisakiGothic", sans-serif;
+  font-size: 30px;
+}
+.jumbotron3 {
+   padding-top: 0px;
+   // 背景画像を暗くする
+  margin: 0px 0px 10px 0px;
+  height: 1200px;
+  font-family: "MisakiGothic", sans-serif;
+  font-size: 30px;
+}
+.jumbotron5 {
+   padding-top: 0px;
+    background:url(black.png);
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+  height: 2000px;
+  font-family: "MisakiGothic", sans-serif;
+  font-size: 30px;
+}
+.jumbotron6 {
+    padding-top: 0px;
+    // 背景画像を暗くする
+    background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.05) ), url(bagan.001.png);
+	background-size: cover;
+	// 背景画像の位置を決める
+	background-position: 50% 50%;
+	height: 1000px;
+  font-family: "MisakiGothic", sans-serif;
+  font-size: 20px;
+}
+
+
+.jumbotron_onegai {
+  background: #000000;
+  border-color: #000000;
+}
+
+.jumbotron_registration {
+  font-family: "MisakiGothic", sans-serif;
+  font-size: 30px;
+}
+
+.jumbotron .container .row{
+    margin-top: 377px;
+}
+
+.jumbotron1 .container{
+    margin-right: 100px;
+}
+
+.navbar-default {
+    background: transparent;
+    border-color: transparent;
+    z-index: 10;
+    font-family: "MisakiGothic", sans-serif;
+    font-size: 30px;
+}
+
+.navbar-brand {
+    color: #FFF;
+    font-size: 30px;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-devise {
+  background: #FFF;
+  border-color: #FFF;
+  z-index: 10;
+  font-family: "MisakiGothic", sans-serif;
+}
+
+
+.navbar-devise_onegai {
+  background: #000000;
+  border-color: #000000;
+  z-index: 10;
+  font-family: "MisakiGothic", sans-serif;
+}
+
+.navbar-devise .navbar-nav > li > a {
+  color: #222222;
+  font-size: 30px;
+}
+
+.navbar-devise .navbar-brand {
+  color: #222222;
+}
+
+.body2 {
+  color: #222;
+  background-color :#FFF;
+}
+
+.square_btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    width: 320px;
+    height: 90px;
+    left:200px;
+}
+
+.square_btn:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+.square_btn2 {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: #FFF;
+    border: solid 2px #FFF;
+    border-radius: 3px;
+    transition: .4s;
+    width: 320px;
+    height: 90px;
+    left:200px;
+}
+
+
+.container {
+  font-family: "MisakiGothic", sans-serif;
+  height: 100%;
+  padding-top:300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container3 {
+  font-family: "MisakiGothic", sans-serif;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+.container2 {
+  padding-top:400px;
+  font-family: "MisakiGothic", sans-serif;
+}
+
+
+.player {
+ position: absolute;
+ top:0;
+ width: 100%;
+ height: 100%;
+ background: #FFF;
+ z-index: 9999999999;
+}
