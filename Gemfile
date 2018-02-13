@@ -18,7 +18,14 @@ gem 'devise'
 gem 'toastr-rails'
 gem "figaro", "~> 1.1.0"
 
+group :development, :test do
+  gem 'sqlite3'
+  gem 'byebug'
+end
 
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
