@@ -19,6 +19,16 @@ gem 'toastr-rails'
 gem "figaro", "~> 1.1.0"
 
 group :development, :test do
+   gem 'postgresql'
+   gem 'byebug'
+ end
+ group :development, :test do
+   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+   gem 'capybara', '~> 2.13'
+   gem 'selenium-webdriver'
+ end
+
+group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
