@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.1.4'
-gem 'sqlite3'
+gem 'postgresql'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -19,16 +19,15 @@ gem 'toastr-rails'
 gem "figaro", "~> 1.1.0"
 
 group :development, :test do
-  gem 'sqlite3'
-  gem 'byebug'
+  gem 'byebug',      '3.4.0'
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
 end
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
