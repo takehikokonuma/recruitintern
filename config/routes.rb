@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'pages/last'
   get 'pages/photo1'
   get 'pages/registration'
+  get 'pages/form'
 end
