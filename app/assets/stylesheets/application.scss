@@ -20,7 +20,18 @@
 
 #about{
   background-image:url(profile.001.png);
+   width: 100%;
 }
+
+@media screen and ( max-width:479px ){
+  .about {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
 #onegai{
   background-image:url(black.png);
 }
