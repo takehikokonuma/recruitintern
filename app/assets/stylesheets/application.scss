@@ -127,7 +127,7 @@ body{
 
 @media screen and ( max-width:479px ){
   .navbar-brand {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
@@ -333,4 +333,23 @@ textarea {
     height: auto;
     min-height: 100%;
     z-index: -1;
+}
+
+@media screen and ( max-width:479px ){
+  .navbar-default .navbar-nav > li > a {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+}
+
+.nav>li {
+    float: left;
+    display: inline-block;
+}
+.navbar-nav {
+    margin: 0;
+}
+.navbar-nav>li>a {
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
 }

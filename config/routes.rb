@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'pages/recruit'
   get 'pages/nakama'
-  get 'pages/onegai'
+  get 'pages/kanasi'
   get 'pages/about'
   get 'pages/last'
   get 'pages/photo1'
