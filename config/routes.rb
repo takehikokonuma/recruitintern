@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   get 'pages/last'
   get 'pages/photo1'
   get 'pages/registration'
-  get 'pages/form'
+
+  get "forms/new" =>'forms#new'
+  get "forms/create"
+  post "forms/create" => "forms#create"        #投稿を保存するためにhttpメソッドはPOST
 end

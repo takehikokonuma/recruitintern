@@ -1,119 +1,75 @@
 <html lang="ja" xml:lang="ja">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>battle</title>
+<script type="text/javascript">
 
-	<script type="text/javascript">
+// APIの読み込み
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+// プレーヤーを埋め込む場所指定
+var ytArea = 'background';
+// 埋め込むYouTube ID指定
+var ytID = "qY_cgaZiCXg";
 
-			//★動画プレーヤーの横幅と縦幅を設定する（ピクセル数）。
-							//横幅
-							var videoWidth = 1700;
+// プレーヤーの埋め込み
+function onYouTubeIframeAPIReady() {
+    ytPlayer = new YT.Player(ytArea, {
+        videoId: ytID,
+				playerVars: {
+						//左の値は「パラメータの名前」。
+						//右の値は「パラメータの値」。
+						'modestbranding': 1,
+						'autohide': 1,
+						'controls': 1,
+						'showinfo': 0,
+						'rel': 0,
+						'autoplay': 1
 
-							//縦幅
-							var videoHeight = 900;
-
-
-
-			//★表示させるYouTube動画の「動画ID」を設定する。
-							var youtubeVideoID =
-              "qY_cgaZiCXg"
-
-
-			//★リダイレクトさせる移動先のページのURLを設定する。
-							var redirectUrl = "http://localhost:3000/pages/onegai";
-
-
-			//★リダイレクト先のページを新しいウィンドウ（新しいタブ）で開くか、
-			//  同じページ内で開くかを設定する
-							//新しいウィンドウ（新しいタブ）で開く「1」 / 同じページ内で開く「0」
-							var redirectTargetBlank = 0;
-
-		//**************************************************************************
-	</script>
-
-</head>
-<body>
-
-<!-- この<div>タグは、下記のJavaScriptの働きによって、ページが表示される前に自動的に<iframe>タグ（動画プレーヤー）に置き換えられます。 -->
-<div id="iframe_player_api"></div>
+				},
 
 
-	<script type="text/javascript">
-		// YouTubeのウェブサイト上にある「IFrameプレーヤーAPI」のコードを
-		// 非同期的に読み込む。
-		var tag = document.createElement('script');
-		tag.src = "//www.youtube.com/iframe_api";
-		var iframePlayerApiScriptTag = document.getElementsByTagName('script')[0];
-		iframePlayerApiScriptTag.parentNode.insertBefore(tag, iframePlayerApiScriptTag);
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
 
-		// 「IFrameプレーヤーAPI」のコードが読み込まれた後、
-		// 「iframe_player_api」というIDがついている<div>タグが
-		// YouTube動画プレーヤーの<iframe>タグに置き換えられる。
-		var player;
-		function onYouTubePlayerAPIReady() {
-				//ここで指定しているID名（「iframe_player_api」）がついた
-				//<div>タグ（上記）は、ページが表示される前に
-				//自動的に<iframe>タグ（動画プレーヤー）に置き換えられます。
-				player = new YT.Player('iframe_player_api', {
-						//動画プレーヤーの横幅（width）と縦幅（height）
-						width: videoWidth,
-						height: videoHeight,
-						//表示させるYouTube動画の「動画ID」
-						videoId: youtubeVideoID,
-						//動画プレーヤーの設定をおこなう「パラメータ」
-						playerVars: {
-								//左の値は「パラメータの名前」。
-								//右の値は「パラメータの値」。
-								'modestbranding': 1,
-								'autohide': 1,
-								'controls': 1,
-								'showinfo': 0,
-								'rel': 0,
-                'autoplay': 1
+function onPlayerReady(){
 
-						},
-						//「イベントリスナー」
-						events: {
-								//左の値は「イベントリスナー」。
-								//右の値はそのイベントが発生した時に実行される関数。
-								'onReady': onPlayerReady,
-								'onStateChange': onPlayerStateChange
-						}
-				});
-		}
-		//動画を再生する準備が整ったときに実行される関数
-		function onPlayerReady(){
+}
+//動画の再生状態が変わったときに実行される関数
+function onPlayerStateChange(event){
 
-		}
-		//動画の再生状態が変わったときに実行される関数
-		function onPlayerStateChange(event){
+			switch(event.data){
+				 case YT.PlayerState.ENDED:
 
-					switch(event.data){
-						 case YT.PlayerState.ENDED:
+							if( redirectTargetBlank ){
+								var redirectATag = document.createElement('a');
+								redirectATag.href = redirectUrl;
+								redirectATag.target = '_blank';
+								document.body.appendChild(redirectATag);
+								redirectATag.click();
+							}else{
+								location.href = redirectUrl;
+							}
 
-									if( redirectTargetBlank ){
-										var redirectATag = document.createElement('a');
-										redirectATag.href = redirectUrl;
-										redirectATag.target = '_blank';
-										document.body.appendChild(redirectATag);
-										redirectATag.click();
-									}else{
-										location.href = redirectUrl;
-									}
+						break;
+				 case YT.PlayerState.PLAYING:
+						break;
+				 case YT.PlayerState.PAUSED:
+						break;
+				 case YT.PlayerState.BUFFERING:
+						break;
+				 case YT.PlayerState.CUED:
+						break;
+			}
+}
 
-								break;
-						 case YT.PlayerState.PLAYING:
-								break;
-						 case YT.PlayerState.PAUSED:
-								break;
-						 case YT.PlayerState.BUFFERING:
-								break;
-						 case YT.PlayerState.CUED:
-								break;
-					}
-		}
-	</script>
+var redirectUrl = "http://localhost:3000/pages/onegai";  //あとで変える　＊＊＊＊
+var redirectTargetBlank = 0;
 
-</body>
-</html>
+ </script>
+
+ <div id="background"></div>
