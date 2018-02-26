@@ -11,15 +11,15 @@ default: &default
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  url: <%= ENV['postgres://lyjeruaancdsym:32a649af470181c50655f6726aa5f27f2f018034466d4d3b40b3f609bd53be10@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dfaho2v2mtadr9'] %>
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  url: <%= ENV['postgres://lyjeruaancdsym:32a649af470181c50655f6726aa5f27f2f018034466d4d3b40b3f609bd53be10@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dfaho2v2mtadr9'] %>

@@ -8925,111 +8925,40 @@ body {
     background-image: url(nakamaninaru.001.png);
   }
 }
-/* line 21, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 20, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 #about {
   background-image: url(profile.001.png);
+  width: 100%;
 }
 
-/* line 24, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+@media screen and (max-width: 479px) {
+  /* line 25, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+  .about {
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 376px) {
+  /* line 33, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+  .about {
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+  }
+}
+/* line 40, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 #onegai {
   background-image: url(black.png);
 }
 
-/* line 28, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 44, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 body {
   min-height: 100%;
   color: #fff;
 }
 
-/* line 33, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron {
-  padding-top: 0px;
-  background: url(bagan.001.jpeg);
-  font-family: "MisakiGothic", sans-serif;
-  margin: 0px 0px 10px 0px;
-  max-width: 100%;
-  height: auto;
-  font-size: 30px;
-}
-
-/* line 43, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron1 {
-  padding-top: 0px;
-  background: url(model.001.jpeg);
-  background-size: cover;
-  margin: 0px 0px 10px 0px;
-  max-width: 100%;
-  height: auto;
-  font-family: "MisakiGothic", sans-serif;
-  font-size: 30px;
-}
-
-/* line 55, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron2 {
-  padding-top: 0px;
-  background: url(profile.001.png);
-  background-size: cover;
-  margin: 0px 0px 0px 0px;
-  max-width: 100%;
-  height: auto;
-  font-family: "MisakiGothic", sans-serif;
-  font-size: 30px;
-}
-
-/* line 66, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron3 {
-  padding-top: 0px;
-  margin: 0px 0px 10px 0px;
-  height: 1200px;
-  font-family: "MisakiGothic", sans-serif;
-  font-size: 30px;
-}
-
-/* line 74, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron5 {
-  padding-top: 0px;
-  background: url(black.png);
-  background-size: cover;
-  margin: 0px 0px 0px 0px;
-  height: 2000px;
-  font-family: "MisakiGothic", sans-serif;
-  font-size: 30px;
-}
-
-/* line 83, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron6 {
-  padding-top: 0px;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05)), url(bagan.001.png);
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 1000px;
-  font-family: "MisakiGothic", sans-serif;
-  font-size: 20px;
-}
-
-/* line 96, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron_onegai {
-  background: #000000;
-  border-color: #000000;
-}
-
-/* line 101, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron_registration {
-  font-family: "MisakiGothic", sans-serif;
-  font-size: 30px;
-}
-
-/* line 106, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron .container .row {
-  margin-top: 377px;
-}
-
-/* line 110, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.jumbotron1 .container {
-  margin-right: 100px;
-}
-
-/* line 114, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 49, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .navbar-default {
   background: transparent;
   border-color: transparent;
@@ -9038,35 +8967,35 @@ body {
   font-size: 30px;
 }
 
-/* line 123, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 57, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .navbar-brand {
   color: #FFF;
   font-size: 30px;
 }
 
 @media screen and (max-width: 479px) {
-  /* line 129, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+  /* line 63, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
   .navbar-brand {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
-/* line 135, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 69, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > li > a {
   color: white;
   font-size: 30px;
 }
 
-/* line 140, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 74, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand {
   color: white;
 }
 
-/* line 144, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 78, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF;
 }
 
-/* line 148, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 82, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .navbar-devise {
   background: #FFF;
   border-color: #FFF;
@@ -9074,7 +9003,7 @@ body {
   font-family: "MisakiGothic", sans-serif;
 }
 
-/* line 156, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 90, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .navbar-devise_onegai {
   background: #000000;
   border-color: #000000;
@@ -9082,24 +9011,24 @@ body {
   font-family: "MisakiGothic", sans-serif;
 }
 
-/* line 163, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 97, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .navbar-devise .navbar-nav > li > a {
   color: #222222;
   font-size: 30px;
 }
 
-/* line 168, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 102, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .navbar-devise .navbar-brand {
   color: #222222;
 }
 
-/* line 172, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 106, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .body2 {
   color: #222;
   background-color: #FFF;
 }
 
-/* line 177, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 111, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .square_btn {
   display: inline-block;
   padding: 0.3em 1em;
@@ -9117,14 +9046,14 @@ body {
 }
 
 @media screen and (max-width: 479px) {
-  /* line 194, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+  /* line 128, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
   .square_btn {
     font-size: 18px;
     width: 210px;
     height: 80px;
   }
 }
-/* line 201, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 135, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .square_btn3 {
   display: inline-block;
   padding: 0.3em 1em;
@@ -9136,32 +9065,42 @@ body {
   border: solid 2px #67c5ff;
   border-radius: 3px;
   transition: .4s;
-  width: 500px;
+  width: 505px;
   height: 100px;
   position: relative;
-  top: 555px;
+  top: 550px;
   right: 113px;
 }
 
-/* line 219, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+@media screen and (max-width: 479px) {
+  /* line 154, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+  .square_btn3 {
+    font-size: 18px;
+    width: 365px;
+    height: 80px;
+    top: 500px;
+    right: 30px;
+  }
+}
+/* line 164, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .square_btn:hover {
   background: #67c5ff;
   color: white;
 }
 
-/* line 224, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 169, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .square_btn3:hover {
   background: #67c5ff;
   color: white;
 }
 
-/* line 229, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 174, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .square_btn2:hover {
   background: #67c5ff;
   color: white;
 }
 
-/* line 234, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 179, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .square_btn2 {
   display: inline-block;
   padding: 0.3em 1em;
@@ -9179,14 +9118,14 @@ body {
 }
 
 @media screen and (max-width: 479px) {
-  /* line 251, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+  /* line 196, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
   .square_btn2 {
     font-size: 20px;
     width: 200px;
     height: 80px;
   }
 }
-/* line 259, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 204, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .container {
   font-family: "MisakiGothic", sans-serif;
   height: 100%;
@@ -9195,8 +9134,8 @@ body {
   margin-right: auto;
 }
 
-/* line 267, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.container1 {
+/* line 212, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+.container_general {
   font-family: "MisakiGothic", sans-serif;
   height: 100%;
   padding-top: 300px;
@@ -9205,39 +9144,33 @@ body {
 }
 
 @media screen and (max-width: 479px) {
-  /* line 276, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-  .container1 {
+  /* line 221, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+  .container_general {
     padding-top: 230px;
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 282, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+  /* line 227, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
   .lead {
     padding-left: 80px;
     padding-bottom: 50px;
   }
 }
-/* line 289, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.container3 {
+/* line 234, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+.container_about {
   font-family: "MisakiGothic", sans-serif;
   padding-top: 40px;
   padding-right: 40px;
 }
 
-/* line 294, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.container2 {
-  padding-top: 400px;
-  font-family: "MisakiGothic", sans-serif;
-}
-
-/* line 298, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.container4 {
+/* line 239, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+.container_onegai {
   padding-top: 200px;
   font-family: "MisakiGothic", sans-serif;
 }
 
-/* line 303, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
-.container6 {
+/* line 243, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+.container_new {
   font-family: "MisakiGothic", sans-serif;
   height: 100%;
   padding-top: 150px;
@@ -9245,7 +9178,7 @@ body {
   margin-right: auto;
 }
 
-/* line 311, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 251, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 .player {
   position: absolute;
   top: 0;
@@ -9255,14 +9188,14 @@ body {
   z-index: 9999999999;
 }
 
-/* line 320, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 260, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 textarea {
   resize: vertical;
   width: 300px;
   height: 200px;
 }
 
-/* line 326, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+/* line 266, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
 #background,
 #background-front {
   position: fixed;
@@ -9273,4 +9206,28 @@ textarea {
   height: auto;
   min-height: 100%;
   z-index: -1;
+}
+
+@media screen and (max-width: 479px) {
+  /* line 279, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+  .navbar-default .navbar-nav > li > a {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+}
+/* line 285, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+.nav > li {
+  float: left;
+  display: inline-block;
+}
+
+/* line 289, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+.navbar-nav {
+  margin: 0;
+}
+
+/* line 292, /Users/TakehikoKonuma/Desktop/homepage/app/assets/stylesheets/application.scss */
+.navbar-nav > li > a {
+  padding-top: 14.5px;
+  padding-bottom: 14.5px;
 }
