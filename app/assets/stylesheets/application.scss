@@ -20,17 +20,19 @@
 #about{
   background-image:url(profile.001.png);
    width: 100%;
+   height: 100%;
 }
 @media screen and ( max-width:479px ){
-  .about {
-    width:80%;
-    max-width: 80%;
+  #about {
+    background-image:url(profile.001.png);
+    width:auto;
+    max-width: auto;
     height: auto;
   }
 }
 
 @media screen and ( max-width:376px ){
-  .about {
+  #about {
     width:80%;
     max-width: 80%;
     height: auto;
