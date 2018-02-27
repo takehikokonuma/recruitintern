@@ -17,13 +17,13 @@
    }
  	}
 
-#about{
+.about{
   background-image:url(profile.001.png);
    width: 100%;
    height: 100%;
 }
 @media screen and ( max-width:479px ){
-  #about {
+  .about {
     background-image:url(profile.001.png);
     width:auto;
     max-width: auto;
@@ -32,7 +32,7 @@
 }
 
 @media screen and ( max-width:376px ){
-  #about {
+  .about {
     width:80%;
     max-width: 80%;
     height: auto;
@@ -148,7 +148,7 @@ body{
       width: 505px;
       height: 100px;
       position: relative;
-      top: 550px;
+      top: 450px;
       right:113px;
     }
 
