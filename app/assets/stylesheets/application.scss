@@ -258,6 +258,16 @@ body{
   margin-right: auto;
 }
 
+@media screen and ( max-width:479px ){
+  .container_new  {
+    font-family: "MisakiGothic", sans-serif;
+    height: 100%;
+    padding-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .player {
  position: absolute;
  top:0;
