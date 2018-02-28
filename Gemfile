@@ -16,6 +16,7 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'devise'
 gem 'toastr-rails'
 gem "figaro", "~> 1.1.0"
+gem 'pg', '0.20.0'
 
  group :development, :test do
    gem 'sqlite3', '1.3.13'
