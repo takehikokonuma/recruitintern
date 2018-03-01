@@ -1,4 +1,3 @@
-
 class FormsController < ApplicationController
 
     def new
@@ -13,6 +12,4 @@ class FormsController < ApplicationController
     def form_params
         params.require(:form).permit(:name, :email, :jobs, :content)  #paramsの中身をpermitして保存を許可
     end
-
-
 end
