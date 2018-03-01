@@ -4,6 +4,9 @@ class Form < ApplicationRecord
 
   attr_accessor :name, :email, :message
 
-  validates :name, :presence => {:message => '名前を入力してください'}
-  validates :email, :presence => {:message => 'メールアドレスを入力してください'}
+  validates :name,  presence: true, length: { maximum: 20 }
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, presence: true, length: { maximum: 50 },
+                    format: { with: VALID_EMAIL_REGEX },
+                    uniqueness: true
 end

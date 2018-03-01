@@ -14,4 +14,5 @@ class FormsController < ApplicationController
         params.require(:form).permit(:name, :email, :jobs, :content)  #paramsの中身をpermitして保存を許可
     end
 
+
 end

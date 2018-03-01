@@ -7,6 +7,7 @@ class CreateForms < ActiveRecord::Migration[5.1]
       t.string :jobs #jobs
       t.text :content #messages
       t.timestamps
+      
     end
   end
 end
