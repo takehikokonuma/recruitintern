@@ -5,7 +5,7 @@ class FormsController < ApplicationController
     end
 
     def create
-      @form = Form.create(@form_params)  #格納された値を保存
+      @form = Form.create!(form_params)  #格納された値を保存
     end
 
   private
